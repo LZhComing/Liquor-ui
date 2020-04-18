@@ -6,6 +6,7 @@ import webiste from '@/const/website'
 import {GetMenu} from '@/api/admin/menu'
 
 function addPath(ele, first) {
+
   const propsConfig = webiste.menu.props
   const propsDefault = {
     label: propsConfig.label || 'label',
