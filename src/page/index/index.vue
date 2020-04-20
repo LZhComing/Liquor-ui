@@ -95,8 +95,7 @@
 
           if (this.expires_in <= 1000 && !this.refreshLock) {
             this.refreshLock = true
-            this.$store
-              .dispatch('RefreshToken')
+            this.$store.dispatch('RefreshToken')
               .catch(() => {
                 clearInterval(this.refreshTime)
               });
